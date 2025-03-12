@@ -1,0 +1,148 @@
+/*RESET CSS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #784d17;
+    
+}
+
+ nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ nav .logo{
+    width: 180px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+ nav .menu{
+    width: 30px;
+    cursor: pointer;
+}
+
+ nav ul{
+    flex: 1;
+    text-align: right;
+    margin-right: 15px;
+}
+ nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: right;
+    padding: 10px;
+}
+
+a:hover{
+    border-bottom: 3px solid#000;
+    border-radius: 1px;
+}
+
+
+
+.banner{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.banner .product{
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 11rem;
+    /*left: 68rem*/
+    transform: translateX(-15rem);
+    z-index: 1;
+    transition: 1.4s;
+    --left: 94px;
+    display: flex;
+    margin: 0 68rem;
+    max-width: 1200px;
+}
+
+.banner .product .soda {
+    background: 
+        var(--url) var(--left) 0, 
+        url(/img/lata2.png);
+    background-size: auto 410px;
+    width: 300px;
+    /*height: 400px;*/
+    aspect-ratio: 2/2.9;
+    background-blend-mode: multiply;
+    mask-image: url(/img/lata2.png);
+    mask-size: auto 410px;
+    transition: 1.4s;
+    position: absolute;
+    gap: 8px;
+    transform: translateX(-2rem)
+}
+
+.banner .product:hover{
+    --left:750px;
+    transform: translateX(-60%) translateY(-120px);
+}
+
+.banner .product:hover .soda:nth-child(2){
+    opacity: 0;
+}
+
+.home{
+    
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+    margin: 180px 5rem;
+}
+
+.home .homecontent h1, p, a {
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    border-radius: 3rem;
+    color: black;
+    text-decoration: none;
+    border:  2px solid #000;
+    font-weight: 500;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(156, 0, 0);
+    color: #fff;
+    box-shadow: 0 0 25px black;
+    border-radius: 4rem;
+}
+
+.background{
+    background-color: #fff;
+}
